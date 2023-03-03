@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function HookCounterTwo() {
 	const initialCount = 0;
+	const initHundred = 100;
 	const [count, setCount] = useState(initialCount);
 
 	const incrementByFive = () => {
@@ -16,6 +17,7 @@ export default function HookCounterTwo() {
 			<button onClick={() => setCount(count + 1)}>Add</button>
 			<button onClick={() => setCount(count - 1)}>Subtract</button>
 			<button onClick={() => setCount(initialCount)}>Reset</button>
+			<button onClick={() => setCount(initHundred)}>Reset Hundred</button>
 			<button onClick={incrementByFive}>Add Five</button>
 		</div>
 	);
