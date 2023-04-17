@@ -1,11 +1,11 @@
 import "./App.css";
 import React from "react";
-import User from "./components/User";
+import DataFetchv2 from "./components/DataFetchv2";
 
 function App() {
 	return (
 		<div className="App">
-			<User />
+			<DataFetchv2 />
 		</div>
 	);
 }
